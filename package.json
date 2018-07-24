@@ -1,7 +1,7 @@
 {
   "name": "jslint",
   "version": "1.0.0",
-  "description": "JSLint",
+  "description": "jslint",
   "main": "Index.js",
   "scripts": {
     "kill": "kill -9 `ps -ef|grep webpack|awk '{print $2}'`",
@@ -54,19 +54,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/catiscat/react-mobx-app.git"
+    "url": "git+https://github.com/catiscat/JSLint.git"
   },
   "keywords": [
-    "react",
-    "mobx",
-    "graphql",
-    "apollo",
-    "antd"
+    "jslint"
   ],
   "author": "mengjie",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/catiscat/react-mobx-app/issues"
+    "url": "https://github.com/catiscat/JSLint/issues"
   },
-  "homepage": "https://github.com/catiscat/react-mobx-app#readme"
+  "homepage": "https://github.com/catiscat/JSLint#readme"
 }
