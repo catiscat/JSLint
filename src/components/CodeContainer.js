@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import * as acorn from 'acorn';
+import transform from '../utils/transform';
 
 class CodeContainer extends Component {
 
   getAst() {
     const code = `
-      const a = 1;
-      const b = a;
+      class Page extends Component{
+        get = ()=>{}
+      }
     `;
-    const ast = acorn && acorn.parse(code);
-    console.log(ast);
+    const es5code = transform(code);
+    const ast = acorn.parse(es5code);
+    console.log(es5code, ast);
   }
   render() {
     this.getAst();

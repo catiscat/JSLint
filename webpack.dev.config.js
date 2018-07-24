@@ -30,7 +30,12 @@ const config = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.json']
+  },
+  node: {
+    fs: 'empty',
+    module: 'empty',
+    net: 'empty'
   }
 };
 
